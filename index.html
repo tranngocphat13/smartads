@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Settings Page</title>
+</head>
+<body class="bg-gray-100 font-sans text-gray-900">
+
+  <!-- Container -->
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-md">
+      <div class="px-6 py-4">
+        <h1 class="text-2xl font-bold text-blue-600">Smart Ads</h1>
+      </div>
+      <nav class="mt-8">
+        <ul>
+          <li>
+            <a href="#" class="block py-2.5 px-4 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg">
+              <i class="fas fa-user"></i> Profile
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2.5 px-4 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 rounded-lg">
+              Campaign
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2.5 px-4 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 rounded-lg">
+              Audiences
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2.5 px-4 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 rounded-lg">
+              Transaction History
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2.5 px-4 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 rounded-lg">
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2.5 px-4 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 rounded-lg">
+              Deposit
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2.5 px-4 text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900 rounded-lg">
+              Withdraw
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8">
+      <header class="flex justify-between items-center">
+        <div>
+          <h2 class="text-2xl font-bold">Settings</h2>
+          <p class="text-sm text-gray-500">User Information</p>
+        </div>
+        <div class="text-right">
+          <p class="text-sm text-gray-600">Balance: <span class="font-bold text-blue-600">200 USDT</span></p>
+        </div>
+      </header>
+
+      <!-- Form Section -->
+      <section class="mt-8 bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center mb-6">
+          <img src="https://via.placeholder.com/50" alt="User avatar" class="rounded-full w-12 h-12">
+          <div class="ml-4">
+            <h3 class="text-lg font-bold">John Doe</h3>
+            <p class="text-sm text-gray-500">johndoe123@gmail.com</p>
+          </div>
+          <span class="ml-auto text-sm text-red-500 font-medium">Unverified Email</span>
+        </div>
+
+        <!-- Email Verification Notice -->
+        <div class="p-4 mb-6 bg-blue-50 border border-blue-200 rounded-lg">
+          <p class="text-sm text-blue-600">Your email hasn't been verified. Please verify your email to ensure account security and receive notifications.</p>
+          <button class="mt-2 px-4 py-2 text-sm font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+            Verify email now
+          </button>
+        </div>
+
+        <!-- Form Fields -->
+        <form>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Your Username</label>
+              <input type="text" class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" placeholder="Enter your username">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Your Email</label>
+              <input type="email" class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" placeholder="Enter your email">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+              <input type="text" class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" placeholder="Enter your phone number">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Country</label>
+              <select class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+                <option>Viet Nam</option>
+                <option>United States</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Timezone</label>
+              <select class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200">
+                <option>(UTC-09:00) America/Alaska</option>
+                <option>(UTC+07:00) Asia/Ho Chi Minh</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Telegram</label>
+              <input type="text" class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" placeholder="Enter your Telegram username">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Skype</label>
+              <input type="text" class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" placeholder="Enter your Skype username">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Whatsapp</label>
+              <input type="text" class="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" placeholder="Enter your Whatsapp number">
+            </div>
+          </div>
+
+          <!-- Save Button -->
+          <div class="flex justify-end">
+            <button type="button" class="px-4 py-2 bg-gray-200 text-gray-600 rounded-lg mr-2">Cancel</button>
+            <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Save Changes</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
